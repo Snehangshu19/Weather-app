@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <meta name ="viewport" content="widht= device-width, initial scale=1.0">`  
+    <title> Weather app</title>
+    <link rel="stylesheet" href="weather webapp design.css">
+</head>
+<body> 
+    <div class="card">
+        <div class="search">
+           <input type="text" placeholder="Enter city name"
+           spellcheck="false">
+           <button><img src="images/search.png"></button> 
+        </div>
+        <div class="weather">
+            <img src="images/rain.png " class="weather-icon">
+            <h1 class="temp">32°c</h1>
+            <h2 class="city">Kolkata</h2>
+            <div class="details">
+                <div class="col"> 
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                        </div>
+                    </div>
+                </div><div class="col">
+                    <img src="images/wind.png">
+                    <div>
+                        <p class="wind">15km/h</p>
+                        <p>Wind</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <script>
+        const apiKey="8ae53414e64118d99e91bd08215c93b";
+        const apiUrl="https://api.openweathermap.org/data/2.5/weather?unit=metric&q=bangalore";
+          async function checkWeather() {
+            const response = await fetch(apiUrl + `` )
+
+            
+          
+    </script>
+
+</body>
+</html>
